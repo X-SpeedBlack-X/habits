@@ -5,6 +5,7 @@ import {
   Inter_800ExtraBold,
   useFonts,
 } from "@expo-google-fonts/inter";
+import "./src/lib/dayjs";
 
 import { StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
