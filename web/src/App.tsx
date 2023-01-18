@@ -1,14 +1,15 @@
-import { Habits } from "./components/Habits";
+/* import { Habits } from "./components/Habits"; */
 
-function App() {
+import { Header } from "./components/Header";
+import { SummaryTable } from "./components/SummaryTable";
+
+export function App() {
   return (
-    <div className="bg-zinc-700 text-white flex flex-col justify-center items-center h-screen">
-      <Habits completed={3} />
-      <Habits completed={10} />
-      <Habits completed={20} />
-      <Habits completed={30} />
+    <div className=" flex flex-col justify-center items-center h-screen w-screen">
+      <div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+        <Header />
+        <SummaryTable />
+      </div>
     </div>
   );
 }
-
-export default App;
